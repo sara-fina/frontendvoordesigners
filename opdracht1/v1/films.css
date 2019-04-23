@@ -1,0 +1,79 @@
+body{
+	background-color: black;
+	font-family:"Helvetica";
+	color:white;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	margin-bottom: -20px;
+	margin-left:3em;
+}
+
+article {
+    width: 20em;
+    margin-bottom: 3em;
+    margin: auto;
+	margin-top: 5em;
+}
+
+img {
+    height: 18em;
+	transition: transform .5s;
+}
+
+img:hover{
+	transform: scale(1.1); 
+}
+
+@media (min-width:40em) {
+    section div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width:65em) {
+    section div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+button{
+	background-color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-color: red;
+	width: 8em;
+	height: 3em;
+	border-radius: 5px;
+    transition: transform .5s;
+	color:white;
+	
+}
+
+button:hover{
+	transform: scale(1.1); 
+}
+
+.hearticon{
+	width:3em;
+	height: 5em;
+	margin-left:80em;
+	pointer-events:none;
+}
+
+li{
+	list-style: none;
+}
+
+.addsave{
+	
+}
