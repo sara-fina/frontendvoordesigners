@@ -1,10 +1,22 @@
-var save = document.querySelector('.save');
+var opslaan = document.querySelector('.save');
 
 
 
-function addSave() { 
-	console.log("functie addsave");
-	//classlist gedoe
+function saving() {
+	
+  opslaan.classList.add("saved");
 }
 
-save.addEventListener('click', addSave);
+opslaan.addEventListener('click', saving);
+
+
+var hartje = document.querySelector('.hearticon');
+
+
+
+function addOpslaan() {
+	
+  hartje.classList.add("heart");
+}
+
+opslaan.addEventListener('click', addOpslaan);

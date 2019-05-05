@@ -6,6 +6,8 @@ body{
 
 h1{
 	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 h2{
@@ -26,7 +28,7 @@ img {
 }
 
 img:hover{
-	transform: scale(1.1); 
+	transform: scale(1.05); 
 }
 
 @media (min-width:40em) {
@@ -66,14 +68,31 @@ button:hover{
 .hearticon{
 	width:3em;
 	height: 5em;
-	margin-left:80em;
-	pointer-events:none;
+	float: right;
+	margin-right: 1em;
+	margin-top: -2em;
 }
 
 li{
 	list-style: none;
 }
 
-.addsave{
-	
+.saved{
+	background-color:grey;
+	border-color:grey;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.heart {
+  animation: pulse 0.8s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); 
+  }
+  100% {
+     transform: scale(1.3); 
+  }
 }
