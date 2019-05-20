@@ -1,0 +1,51 @@
+body {
+	font-family: "Helvetica";
+}
+
+img {
+	width: 20em;
+	height: 20em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 1em;
+
+
+}
+
+h1,
+h2 {
+	text-align: center;
+	color: lightblue;
+}
+
+.carousel {
+	margin-top: 10em;
+	display: flex;
+	flex-wrap: nowrap;
+
+}
+
+button {
+	background-color: lightblue;
+	border-color: lightblue;
+	color: white;
+	height: 3em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonright {
+	margin-left: 60em;
+}
+
+.buttonleft {
+	margin-left: 31em;
+}
+
+main {
+	width: 350px;
+	overflow: hidden;
+	margin-left: 33em;
+}
+
+.fotobeweeg {
+	margin-left: -22em;
+    
