@@ -9,11 +9,16 @@ Ook het principe 08.Provide a natural next step is hier toegepast. De pijltjes g
 
 Door maar een foto per keer te laten zien komt het principe  14 .Progressive disclosure weer terug. Alleen het nodige wordt getoont.
 
-In versie 1 heb ik het voor elkaar gekregen om een foto op te schuiven maar je kan nog niet verder en terug. ook werken het nog niet met het toetsenboord samen.
+In versie 1 heb ik het voor elkaar gekregen om een foto op te schuiven maar je kan nog niet verder en terug. ook werken het nog niet met het toetsenbord samen.
 
 https://github.com/sara-fina/frontendvoordesigners/tree/master/opdracht2/v1 
 
 In versie 2 lukt het nu om terug te gaan en meerdere foto's te laten zien.
-Ook kan je nu klikken met het toetsenboord.
+Ook kan je nu klikken met het toetsenbord.
+
+https://github.com/sara-fina/frontendvoordesigners/tree/master/opdracht2/v2
+
+Dit is de uiteindelijke versie geworden
+
 
 
