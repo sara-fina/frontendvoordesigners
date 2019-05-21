@@ -17,6 +17,10 @@ h2 {
 	color: lightblue;
 }
 
+h1 {
+	font-size: 3.5em;
+}
+
 .carousel {
 	margin-top: 10em;
 	display: flex;
@@ -46,22 +50,12 @@ main {
 	margin-left: 33em;
 }
 
-.fotobeweeg {
+.fotobeweeg2 {
 	margin-left: -22em;
-	
-}
-	
-.fotobeweeg {
-  animation: roll 0.8s;
-
 }
 
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+.fotobeweeg3 {
+	margin-left: -44em;
+
 }
-    
