@@ -1,30 +1,42 @@
-*{
-  box-sizing: border-box;
-  }
+
 body{
-    background: #eee;
-    font-family: sans-serif;
+    background: black;
+    font-family: "Helvetica";
 }
 main{
-  background: white;
   margin: 0 auto;
   padding: 2em;
-  max-width: 34em;
-  box-shadow: 0.5em 1em 0.5em -0.5em #777;
+  text-align: center;
+
 }
 main section article:nth-of-type(odd){
-  background: lightgreen;
+  background: red;
 }
 main section article:nth-of-type(even){
-  background: coral;
+  background: white;
 }
 
 .loader{
-  background: lightgreen;
+  background: red;
 }
 .hide{
   display: none;
 }
 .show{
   display: block
+}
+
+h1{
+	color: white;
+}
+
+button{
+	background-color:red;
+	color: white;
+	border-color:red;
+	padding: 1em;
+   border-radius: 15px;
+	margin-top:8em;
+	font-size: 1.5em;
+	font-weight: bold;
 }
