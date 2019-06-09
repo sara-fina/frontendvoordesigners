@@ -33,11 +33,17 @@ h2,
 h3,
 p {
 	text-align: left;
+	
+}
+
+h3, p{
+	margin-top: 1em;
 }
 
 img {
 	width: 15em;
 	height: 20em;
+	margin-top:2em;
 }
 
 article {
@@ -55,10 +61,56 @@ article {
   background: red;
   color: white;
   padding: 0.5em;
+ visibility: hidden;
+	margin-left: 600px;
+	
 }
-.hide{
-  display: none;
-}
+
 .show{
-  display: block
+  visibility: visible;
 }
+
+.hide{
+	visibility: hidden;
+}
+
+main section article{
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  background-color:red;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left: 15px;
+  border-radius: 0px;
+  
+  
+}
+
+.btn:hover {
+  background-color: lightgray;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+div{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.filter{
+	visibility: hidden;
+}
+
+.active{
+	visibility:visible;
+}
+
