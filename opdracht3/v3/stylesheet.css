@@ -16,6 +16,7 @@ button {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-left: 600px;
+	box-shadow: 2px 2px 5px  red
 
 }
 
@@ -44,15 +45,18 @@ img {
 	width: 15em;
 	height: 20em;
 	margin-top:2em;
+	
 }
 
 article {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 	padding: 2em;
 	border-style: solid;
 	border-color: black;
 	border-bottom-color: red;
 	width: 1200px;
+	height: 100%;
+	
 
 
 
@@ -80,41 +84,7 @@ main section article{
 
 }
 
-.btn {
-  border: none;
-  outline: none;
-  padding: 6px 10px;
-  background-color:red;
-  cursor: pointer;
-  font-size: 0.8em;
-  margin-left: 15px;
-  border-radius: 0px;
-  
-  
-}
 
-.btn:hover {
-  background-color: lightgray;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-div{
-	display: flex;
-	flex-direction: row;
-	
-}
-
-.filter{
-	visibility: hidden;
-}
-
-.active{
-	visibility:visible;
-}
 
 .scrolltop{
 	 border: none;
@@ -125,8 +95,46 @@ div{
   font-size: 0.8em;
   margin-left: 1300px;
   border-radius: 0px;
+  margin-top: -3.8em;
+  visibility: hidden;
 }
 
-article{
-	margin-
+.scrolltopactive{
+	visibility: visible;
 }
+
+html{
+	scroll-behavior: smooth;
+}
+
+.text{
+	text-align: center;
+	color: red;
+}
+
+.notactive{
+	visibility: hidden;
+}
+
+.explain{
+	text-align: center;
+	color: red;
+	visibility: hidden;
+}
+
+.explainactive{
+	visibility: visible;
+}
+
+.explain2{
+	text-align: center;
+	color: red;
+	visibility: hidden;
+	margin-top: -3.8em;
+}
+
+.explainactive2{
+	visibility: visible;
+}
+
+

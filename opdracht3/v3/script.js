@@ -5,6 +5,10 @@ var section = document.querySelector('section');
 var button = document.querySelector("button");
 var loading = document.querySelector(".loader");
 var filter = document.querySelector('.filter');
+var pressm = document.querySelector('.text');
+var topbutton = document.querySelector('.scrolltop')
+var explaining = document.querySelector('.explain')
+var explaining2 = document.querySelector('.explain2')
 console.log("section", section);
 
 
@@ -22,37 +26,66 @@ function laadJson() {
 		setTimeout(function () {
 
 			loading.classList.remove('show');
+			pressm.classList.add('notactive');
+			topbutton.classList.add('scrolltopactive');
+			explaining.classList.add('explainactive');
+			explaining2.classList.add('explainactive2');
 
 			var data = request.response;
 			console.log("request is geladen: ", request.response);
 
 			//roep een functie die html elementen aanmaakt en daar de json data in stopt
 			maakhtml(data);
+			
+			window.scrollTo(0,305);
+		
 
-		}, 1300)
+		}, 1500)
 	});
 }
 
 button.onclick = function () {
 	loading.classList.add('show');
 	this.classList.add('hide'); //button mag weg
+	pressm.classList.add('notactive');
 	section.innerHTML = "";
 	laadJson();
 }
 
-function openButton() {
-	filter.classList.add('active');
 
+document.body.onkeydown = function (scrolling) {
+
+	if (scrolling.keyCode == 49) { //nummer1
+		
+		window.scrollTo(0,538);		
 }
-
-button.addEventListener('click', openButton);
-
-document.onkeydown = function (filters) {
-	if (filters.keycode == 77) {
-
-		filter.classList.add("active");
+	if (scrolling.keyCode == 50){
+		window.scrollTo(0,1450);
+	}
+	
+	if (scrolling.keyCode == 51){
+		window.scrollTo(0,2365);
+	}
+	
+	if (scrolling.keyCode == 52){
+		window.scrollTo(0,3260);
+	}
+	
+	if (scrolling.keyCode == 53){
+		window.scrollTo(0,4170);
+	}
+	
+	if (scrolling.keyCode == 54){
+		window.scrollTo(0,5090);
+	}
+	
+	if (scrolling.keyCode == 84){
+		window.scrollTo(0,0);
 	}
 }
+
+
+
 
 document.onkeydown = function (event) {
 
@@ -65,18 +98,27 @@ document.onkeydown = function (event) {
 
 		//als json is geladen dan wordt dexe listener aangeroepen
 		request.addEventListener("load", function () {
+		
+			setTimeout(function () {
+
+			loading.classList.remove('show'); 
+				
 			var data = request.response;
 			console.log("request is geladen: ", request.response);
 
 			//roep een functie die html elementen aanmaakt en daar de json data in stopt
 			maakhtml(data);
-
+ 
+}, 1500)
 		});
+    loading.classList.add('show');
+	button.classList.add('hide'); //button mag weg
+	pressm.classList.add('notactive');
+	section.innerHTML = "";
+	laadJson();
 
 	}
-
 }
-
 
 function maakhtml(jsondata) {
 	var film = jsondata;
@@ -124,3 +166,12 @@ toTop.onclick = function () {
 	topScroll();
 
 }
+
+		
+	
+
+
+
+
+		
+		

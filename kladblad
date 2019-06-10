@@ -28,8 +28,10 @@ function laadJson() {
 
 			//roep een functie die html elementen aanmaakt en daar de json data in stopt
 			maakhtml(data);
+			
+			//window.scrollTo(0,455);
 
-		}, 1300)
+		}, 1500)
 	});
 }
 
@@ -40,19 +42,7 @@ button.onclick = function () {
 	laadJson();
 }
 
-function openButton() {
-	filter.classList.add('active');
 
-}
-
-button.addEventListener('click', openButton);
-
-document.onkeydown = function (filters) {
-	if (filters.keycode == 77) {
-
-		filter.classList.add("active");
-	}
-}
 
 document.onkeydown = function (event) {
 
@@ -135,3 +125,27 @@ toTop.onclick = function () {
 	topScroll();
 
 }
+
+
+document.onkeydown = function (scrolling) {
+
+	if (scrolling.keyCode == 32) { //spacebar
+	
+		window.scrollTo(0,0);
+}
+};
+
+document.body.onkeydown = function scrolllingDown(scrolldown){
+	var code = scrolldown.keyCode;
+	if (code == 40) {
+		window.scrollBy(0, 700);
+	}
+};
+
+document.onkeydown = function (scrolling) {
+
+	if (scrolling.keyCode == 32) { //spacebar
+	
+		window.scrollTo(0, 0);
+}
+};
