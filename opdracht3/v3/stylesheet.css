@@ -16,8 +16,15 @@ button {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-left: 600px;
-	box-shadow: 2px 2px 5px  red
+	box-shadow: 2px 2px 5px  red;
 
+}
+
+button:hover{
+	background-color: white;
+	border-color:white;
+	color:red;
+	box-shadow: 2px 2px 5px  white;
 }
 
 h1 {
@@ -35,6 +42,10 @@ h3,
 p {
 	text-align: left;
 	
+}
+
+p{
+	max-width: 50em;
 }
 
 h3, p{
@@ -110,6 +121,7 @@ html{
 .text{
 	text-align: center;
 	color: red;
+	max-width: 400em;
 }
 
 .notactive{
@@ -120,6 +132,9 @@ html{
 	text-align: center;
 	color: red;
 	visibility: hidden;
+	max-width: 400em;
+	
+    
 }
 
 .explainactive{
@@ -131,6 +146,7 @@ html{
 	color: red;
 	visibility: hidden;
 	margin-top: -3.8em;
+	max-width: 400em;
 }
 
 .explainactive2{
